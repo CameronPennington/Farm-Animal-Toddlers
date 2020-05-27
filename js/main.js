@@ -2,10 +2,6 @@ var GameState = {
 	preload: function () {
 		this.load.image("background", "./assets/images/background.png");
 		this.load.image("arrow", "./assets/images/arrow.png");
-		// this.load.image("chicken", "./assets/images/chicken.png");
-		// this.load.image("horse", "./assets/images/horse.png");
-		// this.load.image("pig", "./assets/images/pig.png");
-		// this.load.image("sheep", "./assets/images/sheep3.png");
 
 		this.load.spritesheet(
 			"chicken",
@@ -141,8 +137,6 @@ var GameState = {
 		currentAnimalMovement.to({ x: endX }, 1000);
 		currentAnimalMovement.start();
 
-		// this.currentAnimal.x = endX;
-		// newAnimal.x = centerX;
 		this.currentAnimal = newAnimal;
 	},
 	animateAnimal: function (sprite, event) {
